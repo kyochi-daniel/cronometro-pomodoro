@@ -1,0 +1,69 @@
+:root {
+    --font-global: 'Roboto', sans-serif;
+    --bg-color: #121214;
+    --color-font: #fff;
+    --color-button: #42D3FF21;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: var(--bg-color);
+    font-family: var(--font-global);
+    color: var(--color-font);
+    display: grid;
+    height: 100vh;
+}
+
+button {
+    background: transparent;
+    border: none;
+}
+
+main {
+    justify-self: center;
+    align-self: center;
+}
+
+#timer{
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: clamp(2.75rem, 2.75rem + 10vw, 5.5rem);
+    margin-bottom: 1rem;
+}
+
+.hide {
+    display: none;
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background: var(--color-button);
+    border-radius: 9999px;
+    padding: 1.375rem 2.5rem;
+    width: clamp(6.25rem, 6.25rem + 30vw, 14.25rem);
+    height: clamp(5rem, 5rem + 10vw, 6.75rem);
+}
+
+button img {
+    width: clamp(2rem, 1rem + 12vw + 10vw, 4rem);
+}
+
+main div img {
+    cursor: pointer;
+}
+
+.volume {
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0 2rem 2rem 0 ;
+}

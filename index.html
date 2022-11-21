@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temporizador estilo pomodoro">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/icon.png" type="image/x-icon">
+    <!-- styles css -->
+    <link rel="stylesheet" href="assets/style.css">
+    <title>FocusTimer - Pomodoro</title>
+</head>
+<body>
+    <main>
+        <div id="timer">
+            <span class="minutes">00</span>
+            <span>:</span>
+            <span class="seconds">00</span>
+        </div>
+        
+        <div id="controls">
+            <button class="play">
+                <img
+                src="assets/images/icon-play.svg"
+                alt="Ícone de play(soltar)"
+                >
+            </button>
+            <button class="pause hide">
+                <img
+                src="assets/images/icon-pause.svg"
+                alt="Ícone de pause(pausar)"
+                >
+            </button>
+            <button class="stop hide"> 
+                <img
+                src="assets/images/icon-stop.svg"
+                alt="Ícone de stop(parar)"
+                >
+            </button>
+            <button class="set">
+                <img
+                src="assets/images/icon-stopwatch.svg"
+                alt="Ícone de um stopwatch(cronômetro)"
+                >
+            </button>
+        </div>
+        <div class="volume">
+            <button class="sound-on ">
+                <img
+                    src="assets/images/icon-volume.svg"
+                    alt="Ícone de volume"
+                >
+            </button>
+            <button class="sound-off hide"> 
+                <img
+                    src="assets/images/icon-volume_mute.svg"
+                    alt="Ícone de volume mutado"
+                >
+            </button>
+        </div>
+    </main>
+    <!-- scripts js -->
+    <script src="assets/js/index.js" type="module"></script>
+</body>
+</html>
